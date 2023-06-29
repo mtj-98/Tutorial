@@ -430,66 +430,219 @@
 //   console.log(checkPassword("r3actsux"));
 
 // ------- #27
-function getSubscriptionPrice(type) {
-    let price;
-    // Change code below this line
+// function getSubscriptionPrice(type) {
+//     let price;
+//     // Change code below this line
   
-   switch (type) { // Change this line
-      case "starter": 
-        price = 0; // Change this line
-        break;
+//    switch (type) { // Change this line
+//       case "starter": 
+//         price = 0; // Change this line
+//         break;
   
-      case "professional": // Change this line
-        price = 20; // Change this line
-        break;
+//       case "professional": // Change this line
+//         price = 20; // Change this line
+//         break;
   
-      case "organization": // Change this line
-        price = 50; // Change this line
-        break;
-    }
+//       case "organization": // Change this line
+//         price = 50; // Change this line
+//         break;
+//     }
   
-    // Change code above this line
-    return price;
-  }
+//     // Change code above this line
+//     return price;
+//   }
 
 //   console.log(getSubscriptionPrice("professional"));
 //   console.log(getSubscriptionPrice("organization"));
 //   console.log(getSubscriptionPrice("starter"));
 
 // -------- #28
-function checkPassword(password) {
-    const ADMIN_PASSWORD = "jqueryismyjam";
-    let message;
-    // Change code below this line
+// function checkPassword(password) {
+//     const ADMIN_PASSWORD = "jqueryismyjam";
+//     let message;
+//     // Change code below this line
   
-    // if (password === null) {
-    //   message = "Canceled by user!";
-    // } else if (password === ADMIN_PASSWORD) {
-    //   message = "Welcome!";
-    // } else {
-    //   message = "Access denied, wrong password!";
-    // }
+//     // if (password === null) {
+//     //   message = "Canceled by user!";
+//     // } else if (password === ADMIN_PASSWORD) {
+//     //   message = "Welcome!";
+//     // } else {
+//     //   message = "Access denied, wrong password!";
+//     // }
   
-     switch (password) {
+//      switch (password) {
 
-        case  "null":
-        message = "Canceled by user!";
-        break;
+//         case  null:
+//         message = "Canceled by user!";
+//         break;
 
-        case "ADMIN_PASSWORD":
-        message = "Welcome!";  
-        break;
+//         case ADMIN_PASSWORD:
+//         message = "Welcome!";  
+//         break;
 
-        default:
-        message = "Access denied, wrong password!";
-     }
+//         default:
+//         message = "Access denied, wrong password!";
+//      }
 
 
-    // Change code above this line
-    return message;
-  }
+//     // Change code above this line
+//     return message;
+//   }
   
-  console.log(checkPassword("mangohackzor"));
-  console.log(checkPassword(null));
+//   console.log(checkPassword("mangohackzor"));
+//   console.log(checkPassword(null));
 //   console.log(checkPassword("polyhax"));
 //   console.log(checkPassword("jqueryismyjam"));
+
+
+// ------- #29
+// function getShippingCost(country) {
+//   let message;
+//   // Change code below this line
+
+//   switch (country) {
+
+//             case  "China":
+//              message = "Shipping to China will cost 100 credits";
+//             break;
+    
+//             case  "Chile":
+//               message = "Shipping to Chile will cost 250 credits";
+//             break;
+
+//             case  "Australia":
+//               message = "Shipping to Australia will cost 170 credits";
+//             break;
+
+//             case "Jamaica":
+//               message = 'Shipping to Jamaica will cost 120 credits';
+//             break;
+    
+//             default:
+//             message = "Sorry, there is no delivery to your country";
+//          }
+
+
+//   // Change code above this line
+//   return message;
+// }
+
+// console.log(getShippingCost("Australia"));
+// console.log(getShippingCost("Germany"));
+// console.log(getShippingCost("China"));
+// console.log(getShippingCost("China"));
+// console.log(getShippingCost("Jamaica"));
+// console.log(getShippingCost("Sweden"));
+
+
+// ------------ #30
+// function getNameLength(name) {
+//   const message = `Name ${name} is ${name.length} characters long`; // Change this line
+
+//   return message;
+// }
+
+// console.log(getNameLength("Poly"));
+// console.log(getNameLength("Harambe"));
+// console.log(getNameLength("Billy"));
+// console.log(getNameLength("Joe"));
+
+
+// -------- #31
+// const courseTopic = "JavaScript essentials";
+// // Change code below this line
+
+// const courseTopicLength = (courseTopic.length);
+// const firstElement = (courseTopic[0]);
+// const lastElement = (courseTopic[courseTopic.length - 1]);
+
+// // Change code above this line
+
+// console.log(courseTopicLength);
+// console.log(firstElement);
+// console.log(lastElement);
+
+// -------- #32
+// function getSubstring(string, length) {
+//   const substring = string.slice(0,length); // Change this line
+
+//   return substring;
+// }
+
+// console.log(getSubstring("Hello world", 3));
+// console.log(getSubstring("Hello world", 6));
+// console.log(getSubstring("Hello world", 8));
+// console.log(getSubstring("Hello world", 11));
+// console.log(getSubstring("Hello world", 0));
+
+// ----------- #33
+// function formatMessage(message, maxLength) {
+//   let result;
+//   // Change code below this line
+
+// if (message.length <= maxLength) {
+//   result = message.slice(message, maxLength);
+// }
+// else {
+//   result = message.slice(message, maxLength) + "...";
+// }
+
+//   /// Change code above this line
+//   return result;
+// }
+
+// console.log(formatMessage("Curabitur ligula sapien", 16));
+// console.log(formatMessage("Curabitur ligula sapien", 23));
+// console.log(formatMessage("Vestibulum facilisis purus nec", 20));
+// console.log(formatMessage("Vestibulum facilisis purus nec", 30));
+// console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 15));
+// console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 41));
+
+
+// --------------- #34
+// function normalizeInput(input) {
+//   const normalizedInput = input.toLowerCase(); // Change this line
+
+//   return normalizedInput;
+// }
+
+// console.log(normalizeInput("Hello world"));
+// console.log(normalizeInput("This ISN'T SpaM"));
+// console.log(normalizeInput("Big SALE"));
+
+
+// --------- #35
+// function checkForName(fullName, name) {
+//   const result = fullName.includes(name); // Change this line
+//    return result;
+//  }
+ 
+//  console.log(checkForName("Egor Kolbasov", "Egor"));
+//  console.log(checkForName("Egor Kolbasov", "egor"));
+//  console.log(checkForName("Egor Kolbasov", "egOr"));
+//  console.log(checkForName("Egor Kolbasov", "Zhenya"));
+//  console.log(checkForName("Vadim Nekrasov", "Vadim"));
+//  console.log(checkForName("Vadim Nekrasov", "vadim"));
+//  console.log(checkForName("Vadim Nekrasov", "Dima"));
+
+
+
+// -------- #36
+// function checkForSpam(message) {
+//   let result;
+//   // Change code below this line
+// if (message.toLowerCase().includes('spam') || (message.toLowerCase().includes ('sale'))) {
+//   result = true;
+// }
+// else {
+//   result = false;
+// }
+
+
+
+//   // Change code above this line
+//   return result;
+// }
+
+
+// console.log(checkForSpam("Latest technology news"));
