@@ -383,3 +383,57 @@
 //    }
 
 //    console.log(getEvenNumbers(8, 8));
+
+
+// --------- #30
+// const start = 6;
+// const end = 27;
+// let number;
+
+// for (let i = start; i < end; i += 1) {
+//   if (i % 5 === 0) {
+//     number = i;
+//     break;
+//   }
+// }
+
+
+//------- #31
+// refactoring cod
+// function findNumber(start, end, divisor) {
+//     // Change code below this line
+//     let number;
+  
+//     for (let i = start; i < end; i += 1) {
+//       if (i % divisor === 0) {
+//         number = i;
+//         return number;
+//       }
+//     }
+  
+//     // Change code above this line
+//   }
+  
+
+// --------#32
+// function includes(array, value) {
+//     // Change code below this line
+// for (const arr of array) {
+
+//     if (arr === value) {
+//         return true;
+//     }
+// }
+// return false;
+
+//     for (let i = 0; i < array.length; i+=1) {
+//            if (value === array[i]) {
+//                  return true;
+//                } 
+//     }
+//     return false;
+//     // Change code above this line
+//   }
+ 
+
+//   console.log(includes([1, 2, 3, 4, 5], 3));
