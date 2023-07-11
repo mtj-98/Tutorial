@@ -510,3 +510,19 @@
 //     }
 //     console.log(add(15, 27))
   
+// ------------ #32
+// Change code below this line
+// function addOverNum(first,...args) {
+//     let total = 0;
+  
+//     for (const arg of args) {
+//         if (first < arg) {
+//              total +=arg;
+//         }
+     
+//     }
+  
+//     return total;
+//     // Change code above this line
+//   }
+  
