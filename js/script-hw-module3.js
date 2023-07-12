@@ -526,3 +526,171 @@
 //     // Change code above this line
 //   }
   
+
+// ------------ #33
+// // Change code below this line
+// function findMatches(array, ...args) {
+//     const matches = []; // Don't change this line
+  
+
+//     for (const arg of args) {
+//                 if (array.includes(arg)) {
+//                 matches.push(arg);
+//                 }
+
+
+//             }
+
+           
+//     // Change code above this line
+//     return matches;
+   
+//   }
+  
+//   console.log(findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7));
+
+// ------------ #34
+
+// const bookShelf = {
+//     // Change code below this line
+//     books: ["The last kingdom", "The guardian of dreams"],
+//     getBooks() {
+//       return "Returning all books";
+//     },
+//     addBook(bookName) {
+//       return `Adding book ${bookName}`;
+//     },
+//     removeBook(bookName) {
+//       return `Deleting book ${bookName}`;
+//     },
+//     updateBook(oldName, newName) {
+//       return `Updating book ${oldName} to ${newName}`;
+//     },
+//     // Change code above this line
+//   };
+  
+// ------------ #35
+// const bookShelf = { 
+//     books: ['The last kingdom', 'Haze', 'The guardian of dreams'], 
+//     updateBook(oldName, newName) { 
+//         // Change code below this line 
+//         this.books.splice(this.books.indexOf(oldName), 1, newName);
+        
+    
+//         // Change code above this line 
+//     }, 
+// };
+
+//   console.log(bookShelf.updateBook('Haze', 'Dungeon chronicles'));
+
+// ------------ #36
+// const atTheOldToad = {
+//     // Change code below this line
+  
+   
+  
+  
+//     // Change code above this line
+//   };
+//   atTheOldToad.potions = [];
+  
+  
+// ------------ #37
+// const atTheOldToad = {
+//     potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//     // Change code below this line
+//   getPotions() {
+//     return this.potions;
+//   }
+//     // Change code above this line
+//   };
+  
+// ------------ #38
+// const atTheOldToad = {
+//     potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//     addPotion(potionName) {
+//       // Change code below this line
+  
+//   this.potions.push(potionName);
+  
+//       // Change code above this line
+//     },
+//   };
+  
+
+// ------------ #39
+// const atTheOldToad = {
+//     potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//     removePotion(potionName) {
+//       // Change code below this line
+  
+//       const potionIndex = this.potions.indexOf(potionName);
+//       this.potions.splice(potionIndex, 1);
+  
+//       // Change code above this line
+//     },
+//   };
+  
+// ------------ #40
+// const atTheOldToad = {
+//     potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//     updatePotionName(oldName, newName) {
+//       // Change code below this line
+  
+//   this.potions.splice(this.potions.indexOf(oldName), 1, newName);
+
+//       // Change code above this line
+//     },
+//   };
+
+// ------------ #41
+const atTheOldToad = {
+    potions: [
+      { name: "Speed potion", price: 460 },
+      { name: "Dragon breath", price: 780 },
+      { name: "Stone skin", price: 520 },
+    ],
+    // Change code below this line
+    getPotions() {
+      return this.potions;
+    },
+    addPotion(newPotion) {
+      for (const oldPotion of this.potions) {
+        if (newPotion.name === oldPotion.name) {
+          return `Error! Potion ${newPotion.name} is already in your inventory!`;
+        }
+      }
+  
+      this.potions.push(newPotion);
+    },
+    removePotion(potionName) {
+      let potionIndex = -1;
+  
+      for (const potion of this.potions) {
+        if (potion.name === potionName) {
+          potionIndex = this.potions.indexOf(potion);
+        }
+      }
+  
+      if (potionIndex === -1) {
+        return `Potion ${potionName} is not in inventory!`;
+      }
+  
+      this.potions.splice(potionIndex, 1);
+    },
+    updatePotionName(oldName, newName) {
+      let potionIndex = -1;
+  
+      for (const potion of this.potions) {
+        if (potion.name === oldName) {
+          potionIndex = this.potions.indexOf(potion);
+        }
+      }
+  
+      this.potions[potionIndex].name = newName;
+    },
+    // Change code above this line
+  };
+  
+  
+  console.log(atTheOldToad.addPotion({ name: "Invisibility", price: 620 }));
