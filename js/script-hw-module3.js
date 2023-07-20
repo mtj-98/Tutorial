@@ -644,53 +644,281 @@
 //   };
 
 // ------------ #41
-const atTheOldToad = {
-    potions: [
-      { name: "Speed potion", price: 460 },
-      { name: "Dragon breath", price: 780 },
-      { name: "Stone skin", price: 520 },
-    ],
-    // Change code below this line
-    getPotions() {
-      return this.potions;
-    },
-    addPotion(newPotion) {
-      for (const oldPotion of this.potions) {
-        if (newPotion.name === oldPotion.name) {
-          return `Error! Potion ${newPotion.name} is already in your inventory!`;
-        }
-      }
+// const atTheOldToad = {
+//     potions: [
+//       { name: "Speed potion", price: 460 },
+//       { name: "Dragon breath", price: 780 },
+//       { name: "Stone skin", price: 520 },
+//     ],
+//     // Change code below this line
+//     getPotions() {
+//       return this.potions;
+//     },
+//     addPotion(newPotion) {
+//       for (const oldPotion of this.potions) {
+//         if (newPotion.name === oldPotion.name) {
+//           return `Error! Potion ${newPotion.name} is already in your inventory!`;
+//         }
+//       }
   
-      this.potions.push(newPotion);
-    },
-    removePotion(potionName) {
-      let potionIndex = -1;
+//       this.potions.push(newPotion);
+//     },
+//     removePotion(potionName) {
+//       let potionIndex = -1;
   
-      for (const potion of this.potions) {
-        if (potion.name === potionName) {
-          potionIndex = this.potions.indexOf(potion);
-        }
-      }
+//       for (const potion of this.potions) {
+//         if (potion.name === potionName) {
+//           potionIndex = this.potions.indexOf(potion);
+//         }
+//       }
   
-      if (potionIndex === -1) {
-        return `Potion ${potionName} is not in inventory!`;
-      }
+//       if (potionIndex === -1) {
+//         return `Potion ${potionName} is not in inventory!`;
+//       }
   
-      this.potions.splice(potionIndex, 1);
-    },
-    updatePotionName(oldName, newName) {
-      let potionIndex = -1;
+//       this.potions.splice(potionIndex, 1);
+//     },
+//     updatePotionName(oldName, newName) {
+//       let potionIndex = -1;
   
-      for (const potion of this.potions) {
-        if (potion.name === oldName) {
-          potionIndex = this.potions.indexOf(potion);
-        }
-      }
+//       for (const potion of this.potions) {
+//         if (potion.name === oldName) {
+//           potionIndex = this.potions.indexOf(potion);
+//         }
+//       }
   
-      this.potions[potionIndex].name = newName;
-    },
-    // Change code above this line
-  };
+//       this.potions[potionIndex].name = newName;
+//     },
+//     // Change code above this line
+//   };
   
   
-  console.log(atTheOldToad.addPotion({ name: "Invisibility", price: 620 }));
+  // console.log(atTheOldToad.addPotion({ name: "Invisibility", price: 620 }));
+
+
+  // function processCall(recipient, onAvailable, onNotAvailable) {
+  //   // Імітуємо доступність абонента випадковим числом
+  //   const isRecipientAvailable = Math.random() > 0.5;
+  
+  //   if (!isRecipientAvailable) {
+  //     onNotAvailable(recipient);
+  //     return;
+  //   }
+  
+  //   onAvailable(recipient);
+  // }
+  
+  // function takeCall(name) {
+  //   console.log(`З'єднуємо з ${name}, очікуйте...`);
+  //   // Логіка прийняття дзвінка
+  // }
+  
+  // function activateAnsweringMachine(name) {
+  //   console.log(`Абонент ${name} недоступний, залиште повідомлення.`);
+  //   // Логіка активації автовідповідача
+  // }
+  
+  // function leaveHoloMessage(name) {
+  //   console.log(`Абонент ${name} недоступний, записуємо голограму.`);
+  //   // Логіка запису голограми
+  // }
+  
+  // processCall("Манго", takeCall, activateAnsweringMachine);
+  // processCall("Полі", takeCall, leaveHoloMessage);
+
+// Change code below this line
+// const numbers = [5, 10, 15, 20, 25];
+
+// // Оголошення функції
+// numbers.forEach(function (number, index) {
+//   console.log(`Індекс ${index}, значення ${number}`);
+// });
+// Change code below this line
+
+
+
+
+
+// const getFriends = (users) => users.forEach(users => users.friends).filter(users => users.friends);
+
+// const books = [
+//   {
+//     title: 'The Last Kingdom',
+//     author: 'Bernard Cornwell',
+//     rating: 8.38,
+//   },
+//   {
+//     title: 'Beside Still Waters',
+//     author: 'Robert Sheckley',
+//     rating: 8.51,
+//   },
+//   {
+//     title: 'The Dream of a Ridiculous Man',
+//     author: 'Fyodor Dostoevsky',
+//     rating: 7.75,
+//   },
+//   { title: 'Redder Than Blood', author: 'Tanith Lee', rating: 7.94 },
+// ];
+// const BOOK_TITLE = 'The Dream of a Ridiculous Man';
+// const AUTHOR = 'Robert Sheckley';
+// // Change code below this line
+
+// const bookWithTitle = books.find((title) => books.title === BOOK_TITLE) ;
+// const bookByAuthor = books.find((author) => books.author === AUTHOR) ;
+
+
+// console.log(bookWithTitle);
+
+const users = [
+  {
+    name: "Moore Hensley",
+    email: "moorehensley@indexia.com",
+    eyeColor: "blue",
+    friends: ["Sharron Pace"],
+    isActive: false,
+    balance: 2811,
+    gender: "male"
+  },
+  {
+    name: "Sharlene Bush",
+    email: "sharlenebush@tubesys.com",
+    eyeColor: "blue",
+    friends: ["Briana Decker", "Sharron Pace"],
+    isActive: true,
+    balance: 3821,
+    gender: "female"
+  },
+  {
+    name: "Ross Vazquez",
+    email: "rossvazquez@xinware.com",
+    eyeColor: "green",
+    friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+    isActive: false,
+    balance: 3793,
+    gender: "male"
+  },
+  {
+    name: "Elma Head",
+    email: "elmahead@omatom.com",
+    eyeColor: "green",
+    friends: ["Goldie Gentry", "Aisha Tran"],
+    isActive: true,
+    balance: 2278,
+    gender: "female"
+  },
+  {
+    name: "Carey Barr",
+    email: "careybarr@nurali.com",
+    eyeColor: "blue",
+    friends: ["Jordan Sampson", "Eddie Strong"],
+    isActive: true,
+    balance: 3951,
+    gender: "male"
+  },
+  {
+    name: "Blackburn Dotson",
+    email: "blackburndotson@furnigeer.com",
+    eyeColor: "brown",
+    friends: ["Jacklyn Lucas", "Linda Chapman"],
+    isActive: false,
+    balance: 1498,
+    gender: "male"
+  },
+  {
+    name: "Sheree Anthony",
+    email: "shereeanthony@kog.com",
+    eyeColor: "brown",
+    friends: ["Goldie Gentry", "Briana Decker"],
+    isActive: true,
+    balance: 2764,
+    gender: "female"
+  }
+]
+
+// const getUserWithEmail = (users, email) => users.find((({email: userEmail}) => email === userEmail));
+
+
+
+// const sortByDescendingFriendCount = users => [...users].sort((firstFriend, secondFriend) => secondFriend.friends.localeCompare(firstFriend.friends));
+
+// console.log(sortByDescendingFriendCount(users));
+
+// const students = [
+//   { name: "Манго", score: 83 },
+//   { name: "Полі", score: 59 },
+//   { name: "Аякс", score: 37 },
+//   { name: "Ківі", score: 94 },
+// ];
+
+// const inAscendingScoreOrder = students.sort(
+//   (firstStudent, secondStudent) => firstStudent.score - secondStudent.score
+// );
+
+// const inDescendingScoreOrder = students.sort(
+//   (firstStudent, secondStudent) => secondStudent.score - firstStudent.score
+// );
+
+// const inAlphabeticalOrder = [...students].sort((firstStudent, secondStudent) =>
+//   firstStudent.name.localeCompare(secondStudent.name)
+// );
+
+// console.log(inAlphabeticalOrder);
+
+
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//   {
+//     title: "The Dreams in the Witch House",
+//     author: "Howard Lovecraft",
+//     rating: 8.67,
+//   },
+// ];
+
+
+// const getNamesSortedByFriendCount = users => users.flatMap(users => users.friends).filter((friends, idx, arr) => arr.indexOf(friends) === idx).sort((a, b) => a.localeCompare(b));
+
+// const getNamesSortedByFriendCount = users => [...users].sort((a, b) => a.friends.length - b.friends.length).map( users => users.name);
+// console.log(getNamesSortedByFriendCount(users));
+
+
+
+
+
+
+// Доповни функцію getTotalBalanceByGender(users, gender) таким чином, 
+// щоб вона повертала загальний баланс користувачів (властивість balance), 
+// стать яких (властивість gender) збігається зі значенням параметра gender.
+
+// Оголошена змінна getTotalBalanceByGender
+// Змінній getTotalBalanceByGender присвоєна стрілочна функція з параметрами (users, gender)
+// У тілі функції використовується ланцюжок методів в правильному порядку
+// Значення параметра users не змінюється
+// Якщо значення параметра gender - це рядок "male", функція повертає число 12053
+// Якщо значення параметра gender - це рядок "female", функція повертає число 8863
+// Виклик функції з випадковими, але валідними аргументами, повертає правильне значення
+
+
+// const getTotalBalanceByGender = (users, gender) => users.filter(({gender: genderForM}) => genderForM === gender).reduce((acc, {balance}) => (acc + balance),0);
+
+
+// console.log(getTotalBalanceByGender(users, "male"));
+
+
+
+// users.reduce((acc, {balance}) => (acc + balance),0)
+// users.filter((gender, index, array) => array.indexOf(gender) === index); 
