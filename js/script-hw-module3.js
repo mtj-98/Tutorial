@@ -447,9 +447,8 @@
 
 //     return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
 //   }
-  
-//   console.log(calculateMeanTemperature({ today: {low: 28, high: 32}, tomorrow: {low: 25, high: 29} }));
 
+//   console.log(calculateMeanTemperature({ today: {low: 28, high: 32}, tomorrow: {low: 25, high: 29} }));
 
 // ------------ #27
 // const scores = [89, 64, 42, 17, 93, 51, 26];
@@ -481,22 +480,19 @@
 //   };
 //   // Change code below this line
 //   const finalSettings = {...defaultSettings, ...overrideSettings};
-  
+
 // ------------ #30
 // function makeTask(data) {
 //     const completed = false;
 //     const category = "General";
 //     const priority = "Normal";
 //     // Change code below this line
-  
 
 //     return { ...{ category, priority, completed }, ...data };
 
-
 //     // Change code above this line
 //   }
-// console.log(makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" }));  
-
+// console.log(makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" }));
 
 // ------------ #31
 // Change code below this line
@@ -505,48 +501,44 @@
 //     for (let arg of args) {
 //       sum += arg;
 //     }
-      
+
 //       return sum;
 //     }
 //     console.log(add(15, 27))
-  
+
 // ------------ #32
 // Change code below this line
 // function addOverNum(first,...args) {
 //     let total = 0;
-  
+
 //     for (const arg of args) {
 //         if (first < arg) {
 //              total +=arg;
 //         }
-     
+
 //     }
-  
+
 //     return total;
 //     // Change code above this line
 //   }
-  
 
 // ------------ #33
 // // Change code below this line
 // function findMatches(array, ...args) {
 //     const matches = []; // Don't change this line
-  
 
 //     for (const arg of args) {
 //                 if (array.includes(arg)) {
 //                 matches.push(arg);
 //                 }
 
-
 //             }
 
-           
 //     // Change code above this line
 //     return matches;
-   
+
 //   }
-  
+
 //   console.log(findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7));
 
 // ------------ #34
@@ -568,17 +560,16 @@
 //     },
 //     // Change code above this line
 //   };
-  
+
 // ------------ #35
-// const bookShelf = { 
-//     books: ['The last kingdom', 'Haze', 'The guardian of dreams'], 
-//     updateBook(oldName, newName) { 
-//         // Change code below this line 
+// const bookShelf = {
+//     books: ['The last kingdom', 'Haze', 'The guardian of dreams'],
+//     updateBook(oldName, newName) {
+//         // Change code below this line
 //         this.books.splice(this.books.indexOf(oldName), 1, newName);
-        
-    
-//         // Change code above this line 
-//     }, 
+
+//         // Change code above this line
+//     },
 // };
 
 //   console.log(bookShelf.updateBook('Haze', 'Dungeon chronicles'));
@@ -586,15 +577,11 @@
 // ------------ #36
 // const atTheOldToad = {
 //     // Change code below this line
-  
-   
-  
-  
+
 //     // Change code above this line
 //   };
 //   atTheOldToad.potions = [];
-  
-  
+
 // ------------ #37
 // const atTheOldToad = {
 //     potions: ["Speed potion", "Dragon breath", "Stone skin"],
@@ -604,39 +591,38 @@
 //   }
 //     // Change code above this line
 //   };
-  
+
 // ------------ #38
 // const atTheOldToad = {
 //     potions: ["Speed potion", "Dragon breath", "Stone skin"],
 //     addPotion(potionName) {
 //       // Change code below this line
-  
+
 //   this.potions.push(potionName);
-  
+
 //       // Change code above this line
 //     },
 //   };
-  
 
 // ------------ #39
 // const atTheOldToad = {
 //     potions: ["Speed potion", "Dragon breath", "Stone skin"],
 //     removePotion(potionName) {
 //       // Change code below this line
-  
+
 //       const potionIndex = this.potions.indexOf(potionName);
 //       this.potions.splice(potionIndex, 1);
-  
+
 //       // Change code above this line
 //     },
 //   };
-  
+
 // ------------ #40
 // const atTheOldToad = {
 //     potions: ["Speed potion", "Dragon breath", "Stone skin"],
 //     updatePotionName(oldName, newName) {
 //       // Change code below this line
-  
+
 //   this.potions.splice(this.potions.indexOf(oldName), 1, newName);
 
 //       // Change code above this line
@@ -660,71 +646,69 @@
 //           return `Error! Potion ${newPotion.name} is already in your inventory!`;
 //         }
 //       }
-  
+
 //       this.potions.push(newPotion);
 //     },
 //     removePotion(potionName) {
 //       let potionIndex = -1;
-  
+
 //       for (const potion of this.potions) {
 //         if (potion.name === potionName) {
 //           potionIndex = this.potions.indexOf(potion);
 //         }
 //       }
-  
+
 //       if (potionIndex === -1) {
 //         return `Potion ${potionName} is not in inventory!`;
 //       }
-  
+
 //       this.potions.splice(potionIndex, 1);
 //     },
 //     updatePotionName(oldName, newName) {
 //       let potionIndex = -1;
-  
+
 //       for (const potion of this.potions) {
 //         if (potion.name === oldName) {
 //           potionIndex = this.potions.indexOf(potion);
 //         }
 //       }
-  
+
 //       this.potions[potionIndex].name = newName;
 //     },
 //     // Change code above this line
 //   };
-  
-  
-  // console.log(atTheOldToad.addPotion({ name: "Invisibility", price: 620 }));
 
+// console.log(atTheOldToad.addPotion({ name: "Invisibility", price: 620 }));
 
-  // function processCall(recipient, onAvailable, onNotAvailable) {
-  //   // Імітуємо доступність абонента випадковим числом
-  //   const isRecipientAvailable = Math.random() > 0.5;
-  
-  //   if (!isRecipientAvailable) {
-  //     onNotAvailable(recipient);
-  //     return;
-  //   }
-  
-  //   onAvailable(recipient);
-  // }
-  
-  // function takeCall(name) {
-  //   console.log(`З'єднуємо з ${name}, очікуйте...`);
-  //   // Логіка прийняття дзвінка
-  // }
-  
-  // function activateAnsweringMachine(name) {
-  //   console.log(`Абонент ${name} недоступний, залиште повідомлення.`);
-  //   // Логіка активації автовідповідача
-  // }
-  
-  // function leaveHoloMessage(name) {
-  //   console.log(`Абонент ${name} недоступний, записуємо голограму.`);
-  //   // Логіка запису голограми
-  // }
-  
-  // processCall("Манго", takeCall, activateAnsweringMachine);
-  // processCall("Полі", takeCall, leaveHoloMessage);
+// function processCall(recipient, onAvailable, onNotAvailable) {
+//   // Імітуємо доступність абонента випадковим числом
+//   const isRecipientAvailable = Math.random() > 0.5;
+
+//   if (!isRecipientAvailable) {
+//     onNotAvailable(recipient);
+//     return;
+//   }
+
+//   onAvailable(recipient);
+// }
+
+// function takeCall(name) {
+//   console.log(`З'єднуємо з ${name}, очікуйте...`);
+//   // Логіка прийняття дзвінка
+// }
+
+// function activateAnsweringMachine(name) {
+//   console.log(`Абонент ${name} недоступний, залиште повідомлення.`);
+//   // Логіка активації автовідповідача
+// }
+
+// function leaveHoloMessage(name) {
+//   console.log(`Абонент ${name} недоступний, записуємо голограму.`);
+//   // Логіка запису голограми
+// }
+
+// processCall("Манго", takeCall, activateAnsweringMachine);
+// processCall("Полі", takeCall, leaveHoloMessage);
 
 // Change code below this line
 // const numbers = [5, 10, 15, 20, 25];
@@ -734,10 +718,6 @@
 //   console.log(`Індекс ${index}, значення ${number}`);
 // });
 // Change code below this line
-
-
-
-
 
 // const getFriends = (users) => users.forEach(users => users.friends).filter(users => users.friends);
 
@@ -766,78 +746,75 @@
 // const bookWithTitle = books.find((title) => books.title === BOOK_TITLE) ;
 // const bookByAuthor = books.find((author) => books.author === AUTHOR) ;
 
-
 // console.log(bookWithTitle);
 
-const users = [
-  {
-    name: "Moore Hensley",
-    email: "moorehensley@indexia.com",
-    eyeColor: "blue",
-    friends: ["Sharron Pace"],
-    isActive: false,
-    balance: 2811,
-    gender: "male"
-  },
-  {
-    name: "Sharlene Bush",
-    email: "sharlenebush@tubesys.com",
-    eyeColor: "blue",
-    friends: ["Briana Decker", "Sharron Pace"],
-    isActive: true,
-    balance: 3821,
-    gender: "female"
-  },
-  {
-    name: "Ross Vazquez",
-    email: "rossvazquez@xinware.com",
-    eyeColor: "green",
-    friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
-    isActive: false,
-    balance: 3793,
-    gender: "male"
-  },
-  {
-    name: "Elma Head",
-    email: "elmahead@omatom.com",
-    eyeColor: "green",
-    friends: ["Goldie Gentry", "Aisha Tran"],
-    isActive: true,
-    balance: 2278,
-    gender: "female"
-  },
-  {
-    name: "Carey Barr",
-    email: "careybarr@nurali.com",
-    eyeColor: "blue",
-    friends: ["Jordan Sampson", "Eddie Strong"],
-    isActive: true,
-    balance: 3951,
-    gender: "male"
-  },
-  {
-    name: "Blackburn Dotson",
-    email: "blackburndotson@furnigeer.com",
-    eyeColor: "brown",
-    friends: ["Jacklyn Lucas", "Linda Chapman"],
-    isActive: false,
-    balance: 1498,
-    gender: "male"
-  },
-  {
-    name: "Sheree Anthony",
-    email: "shereeanthony@kog.com",
-    eyeColor: "brown",
-    friends: ["Goldie Gentry", "Briana Decker"],
-    isActive: true,
-    balance: 2764,
-    gender: "female"
-  }
-]
+// const users = [
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     gender: "female"
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     gender: "male"
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     gender: "female"
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong"],
+//     isActive: true,
+//     balance: 3951,
+//     gender: "male"
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman"],
+//     isActive: false,
+//     balance: 1498,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     gender: "female"
+//   }
+// ]
 
 // const getUserWithEmail = (users, email) => users.find((({email: userEmail}) => email === userEmail));
-
-
 
 // const sortByDescendingFriendCount = users => [...users].sort((firstFriend, secondFriend) => secondFriend.friends.localeCompare(firstFriend.friends));
 
@@ -864,7 +841,6 @@ const users = [
 
 // console.log(inAlphabeticalOrder);
 
-
 // const books = [
 //   {
 //     title: "The Last Kingdom",
@@ -889,19 +865,13 @@ const users = [
 //   },
 // ];
 
-
 // const getNamesSortedByFriendCount = users => users.flatMap(users => users.friends).filter((friends, idx, arr) => arr.indexOf(friends) === idx).sort((a, b) => a.localeCompare(b));
 
 // const getNamesSortedByFriendCount = users => [...users].sort((a, b) => a.friends.length - b.friends.length).map( users => users.name);
 // console.log(getNamesSortedByFriendCount(users));
 
-
-
-
-
-
-// Доповни функцію getTotalBalanceByGender(users, gender) таким чином, 
-// щоб вона повертала загальний баланс користувачів (властивість balance), 
+// Доповни функцію getTotalBalanceByGender(users, gender) таким чином,
+// щоб вона повертала загальний баланс користувачів (властивість balance),
 // стать яких (властивість gender) збігається зі значенням параметра gender.
 
 // Оголошена змінна getTotalBalanceByGender
@@ -912,13 +882,183 @@ const users = [
 // Якщо значення параметра gender - це рядок "female", функція повертає число 8863
 // Виклик функції з випадковими, але валідними аргументами, повертає правильне значення
 
-
 // const getTotalBalanceByGender = (users, gender) => users.filter(({gender: genderForM}) => genderForM === gender).reduce((acc, {balance}) => (acc + balance),0);
-
 
 // console.log(getTotalBalanceByGender(users, "male"));
 
-
-
 // users.reduce((acc, {balance}) => (acc + balance),0)
-// users.filter((gender, index, array) => array.indexOf(gender) === index); 
+// users.filter((gender, index, array) => array.indexOf(gender) === index);
+
+// #############################################################################
+
+// const customer = {
+//   username: "Mango",
+//   balance: 24000,
+//   discount: 0.1,
+//   orders: ["Burger", "Pizza", "Salad"],
+//   // Change code below this line
+//   getBalance() {
+//     return this.balance;
+//   },
+//   getDiscount() {
+//     return this.discount;
+//   },
+//   setDiscount(value) {
+//  this.discount = value;
+//   },
+//   getOrders() {
+//     return this.orders;
+//   },
+//   addOrder(cost, order) {
+//     this.balance -= cost - cost * thisdiscount;
+//     this.orders.push(order);
+//   },
+//   // Change code above this line
+// };
+
+// customer.setDiscount(0.15);
+// console.log(customer.getDiscount()); // 0.15
+// customer.addOrder(5000, "Steak");
+// console.log(customer.getBalance()); // 19750
+// console.log(customer.getOrders()); // ["Burger", "Pizza", "Salad", "Steak"]
+
+// class Storage {
+//   constructor(items) {
+//     this.items = items;
+//   }
+
+//   getItems() {
+//     return this.items;
+//   }
+
+//   addItem(newItem) {
+//        this.item.push(newItem);
+
+//   }
+
+//   removeItem(itemToRemove) {
+//     const idx = this.items.indexOf(itemToRemove);
+//       this.items.slice(idx, 1)
+//   }
+// }
+
+// // Change code above this line
+// const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+// storage.addItem("Droid");
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
+// storage.removeItem("Prolonger");
+// console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
+
+// class StringBuilder {
+//   constructor(initialValue) {
+//     this.value = initialValue;
+//   }
+// getValue() {
+//   return this.value;
+// }
+// padEnd(str) {
+//   return this.value = this.value += str;
+//   }
+// padStart(str) {
+//   return this.value = str + this.value;
+// }
+// padBoth(str) {
+//    return this.value=  str += this.value += str;
+
+// }
+// }
+
+// const builder = new StringBuilder(".");
+// console.log(builder.getValue()); // "."
+// builder.padStart("^");
+// console.log(builder.getValue()); // "^."
+// builder.padEnd("^");
+// console.log(builder.getValue()); // "^.^"
+// builder.padBoth("=");
+// console.log(builder.getValue()); // "=^.^="
+
+// class Car {
+//   // Change code below this line
+// static MAX_PRICE = {
+//   MAX_PRICE: 50000,
+// }
+
+//   #price;
+
+//   constructor({ price }) {
+//     this.#price = price;
+//   }
+
+//   get price() {
+//     return this.#price;
+//   }
+
+//   set price(newPrice) {
+//     if (Car.MAX_PRICE >= newPrice) {
+//       return  this.#price = newPrice;
+//     }
+
+//   }
+//   // Change code above this line
+// }
+
+// const audi = new Car({ price: 35000 });
+// console.log(audi.price); // 35000
+
+// audi.price = 49000;
+// console.log(audi.price); // 49000
+
+// audi.price = 51000;
+// console.log(audi.price); // 49000
+
+// class Car {
+//   static #MAX_PRICE = 50000;
+//   // Change code below this line
+
+//   static checkPrice(price) {
+//     if (Car.#MAX_PRICE < price) {
+//       return `Error! Price exceeds the maximum.`;
+//     }
+//     return `Success! Price is within acceptable limits.`;
+  
+//   }
+
+//   // Change code above this line
+//   constructor({ price }) {
+//     this.price = price;
+//   }
+// }
+
+// const audi = new Car({ price: 36000 });
+// const bmw = new Car({ price: 64000 });
+
+// console.log(Car.checkPrice(audi.price)); // "Success! Price is within acceptable limits"
+// console.log(Car.checkPrice(bmw.price)); // "Error! Price exceeds the maximum"
+class User {
+  constructor(email) {
+    this.email = email;
+  }
+
+  get email() {
+    return this.email;
+  }
+
+  set email(newEmail) {
+    this.email = newEmail;
+  }
+}
+
+
+class Admin extends User {
+ AccessLevel = {
+    BASIC: "basic", 
+    SUPERUSER: "superuser",
+  }
+}
+// Change code below this line
+
+
+console.log(Admin.AccessLevel);
+
+
